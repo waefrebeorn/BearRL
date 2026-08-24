@@ -1,8 +1,8 @@
 {
  "certificate": {
-  "when": 1787561407,
+  "when": 1787562072,
   "seeds_per_property": 2,
-  "total_properties": 23,
+  "total_properties": 24,
   "violations": 0,
   "status": "ALL_HOLD"
  },
@@ -19,14 +19,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.036
+     "secs": 0.035
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.03
+     "secs": 0.029
     }
    ]
   },
@@ -42,14 +42,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.033
+     "secs": 0.029
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.033
+     "secs": 0.032
     }
    ]
   },
@@ -65,14 +65,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.035
+     "secs": 0.041
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.034
+     "secs": 0.03
     }
    ]
   },
@@ -88,14 +88,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.89
+     "secs": 0.878
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.94
+     "secs": 0.846
     }
    ]
   },
@@ -111,14 +111,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.894
+     "secs": 0.839
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.875
+     "secs": 0.916
     }
    ]
   },
@@ -157,14 +157,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     }
    ]
   },
@@ -187,7 +187,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     }
    ]
   },
@@ -203,14 +203,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.852
+     "secs": 0.848
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.852
+     "secs": 0.835
     }
    ]
   },
@@ -233,7 +233,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     }
    ]
   },
@@ -279,7 +279,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     }
    ]
   },
@@ -295,7 +295,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.005
+     "secs": 0.004
     },
     {
      "seed": 1,
@@ -318,14 +318,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 33.33
+     "secs": 32.208
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 32.734
+     "secs": 31.98
     }
    ]
   },
@@ -341,14 +341,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.03
+     "secs": 0.028
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.032
+     "secs": 0.029
     }
    ]
   },
@@ -364,14 +364,37 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.017
+     "secs": 0.025
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.022
+     "secs": 0.023
+    }
+   ]
+  },
+  {
+   "property": "hyperbolic_mlr_classification",
+   "invariant": "prototype MLR: softmax sums to 1; CE loss decreases; accuracy beats chance",
+   "repo": "wubumath",
+   "seeds": 2,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.128
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.11
     }
    ]
   },
@@ -410,7 +433,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     },
     {
      "seed": 1,
@@ -440,7 +463,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     }
    ]
   },
@@ -456,14 +479,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.036
+     "secs": 0.041
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.034
+     "secs": 0.055
     }
    ]
   },
@@ -479,14 +502,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.848
+     "secs": 0.928
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.842
+     "secs": 0.896
     }
    ]
   },
@@ -509,7 +532,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     }
    ]
   },

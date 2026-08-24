@@ -122,6 +122,12 @@ PROPERTIES = [
         invariant="P-frame residual survives beam IR round trip; renderer blind; RD monotone",
     ),
     dict(
+        name="hyperbolic_mlr_classification",
+        repo="wubumath",
+        cmd="bin/test_hmlr",
+        invariant="prototype MLR: softmax sums to 1; CE loss decreases; accuracy beats chance",
+    ),
+    dict(
         name="hyperbolic_activation",
         repo="wubumath",
         cmd="bin/test_hact",
