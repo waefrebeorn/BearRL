@@ -128,6 +128,12 @@ PROPERTIES = [
         invariant="GAE: zero-mean after norm, lambda endpoints exact, intermediate distinct; policy grad norm bounded by 1",
     ),
     dict(
+        name="hope_positional_encoding",
+        repo="wubumath",
+        cmd="bin/test_hope",
+        invariant="HoPE: norm monotone in position; finite at 10K tokens; positions distinguishable",
+    ),
+    dict(
         name="hyperbolic_mlr_classification",
         repo="wubumath",
         cmd="bin/test_hmlr",
