@@ -98,6 +98,24 @@ PROPERTIES = [
         invariant="log(exp(v))==v; slerp monotone; unit*product stays unit (fuzzed)",
     ),
     dict(
+        name="kodak_audio_image_round_trip",
+        repo="wubumath",
+        cmd="bin/test_kodak",
+        invariant="audio->image->audio corr>0.99 through 256x256 RGB layout",
+    ),
+    dict(
+        name="pair_corpus_val_generalization",
+        repo="wubumath",
+        cmd="bin/test_pairs",
+        invariant="recall@1/@5 on held-out val scenes above chance, monotone in k",
+    ),
+    dict(
+        name="pframe_residual_rd_monotone",
+        repo="wubumath",
+        cmd="bin/test_flow_matching",
+        invariant="residual recon error decreases with quant levels; exact bit count",
+    ),
+    dict(
         name="stft_round_trip_reversible",
         repo="wubumath",
         cmd="bin/test_stft",
