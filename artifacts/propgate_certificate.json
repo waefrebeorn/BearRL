@@ -1,8 +1,8 @@
 {
  "certificate": {
-  "when": 1787564474,
+  "when": 1787565068,
   "seeds_per_property": 2,
-  "total_properties": 28,
+  "total_properties": 29,
   "violations": 0,
   "status": "ALL_HOLD"
  },
@@ -19,14 +19,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.034
+     "secs": 0.032
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.03
+     "secs": 0.034
     }
    ]
   },
@@ -42,14 +42,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.036
+     "secs": 0.027
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.038
+     "secs": 0.037
     }
    ]
   },
@@ -65,14 +65,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.038
+     "secs": 0.028
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.028
+     "secs": 0.035
     }
    ]
   },
@@ -88,14 +88,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.83
+     "secs": 0.929
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.831
+     "secs": 0.958
     }
    ]
   },
@@ -111,14 +111,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.842
+     "secs": 0.879
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.894
+     "secs": 0.937
     }
    ]
   },
@@ -164,7 +164,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     }
    ]
   },
@@ -203,14 +203,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.831
+     "secs": 0.956
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.835
+     "secs": 0.839
     }
    ]
   },
@@ -295,7 +295,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.004
+     "secs": 0.005
     },
     {
      "seed": 1,
@@ -318,14 +318,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 32.02
+     "secs": 33.911
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 32.796
+     "secs": 32.902
     }
    ]
   },
@@ -341,14 +341,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.035
+     "secs": 0.032
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.034
+     "secs": 0.028
     }
    ]
   },
@@ -364,14 +364,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.017
+     "secs": 0.018
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.016
+     "secs": 0.019
     }
    ]
   },
@@ -387,7 +387,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     },
     {
      "seed": 1,
@@ -395,6 +395,29 @@
      "rc": 0,
      "tail": "",
      "secs": 0.001
+    }
+   ]
+  },
+  {
+   "property": "psychoacoustic_masking_threshold",
+   "invariant": "Bark spreading: strong tone masks weak; isolated tone SMR positive; band SMR finite and nonneg",
+   "repo": "wubumath",
+   "seeds": 2,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.019
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.018
     }
    ]
   },
@@ -486,7 +509,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.091
+     "secs": 0.101
     }
    ]
   },
@@ -571,14 +594,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.032
+     "secs": 0.034
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.032
+     "secs": 0.033
     }
    ]
   },
@@ -594,14 +617,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.835
+     "secs": 0.843
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.842
+     "secs": 0.833
     }
    ]
   },

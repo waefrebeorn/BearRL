@@ -128,6 +128,12 @@ PROPERTIES = [
         invariant="GAE: zero-mean after norm, lambda endpoints exact, intermediate distinct; policy grad norm bounded by 1",
     ),
     dict(
+        name="psychoacoustic_masking_threshold",
+        repo="wubumath",
+        cmd="bin/test_pa",
+        invariant="Bark spreading: strong tone masks weak; isolated tone SMR positive; band SMR finite and nonneg",
+    ),
+    dict(
         name="hope_positional_encoding",
         repo="wubumath",
         cmd="bin/test_hope",
