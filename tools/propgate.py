@@ -122,6 +122,12 @@ PROPERTIES = [
         invariant="P-frame residual survives beam IR round trip; renderer blind; RD monotone",
     ),
     dict(
+        name="hyperboloid_linear_layer",
+        repo="wubumath",
+        cmd="bin/test_hlin",
+        invariant="gyrolinear output stays on hyperboloid; identity reproduces; bias dominates at W=0",
+    ),
+    dict(
         name="hyperbolic_attention_primitives",
         repo="wubumath",
         cmd="bin/test_hattn",
