@@ -1,8 +1,8 @@
 {
  "certificate": {
-  "when": 1787548861,
+  "when": 1787551913,
   "seeds_per_property": 2,
-  "total_properties": 13,
+  "total_properties": 16,
   "violations": 0,
   "status": "ALL_HOLD"
  },
@@ -88,14 +88,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.671
+     "secs": 0.813
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.673
+     "secs": 0.767
     }
    ]
   },
@@ -111,14 +111,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.674
+     "secs": 0.669
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.676
+     "secs": 0.673
     }
    ]
   },
@@ -157,7 +157,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     },
     {
      "seed": 1,
@@ -187,7 +187,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     }
    ]
   },
@@ -203,14 +203,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.675
+     "secs": 0.662
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.672
+     "secs": 3.016
     }
    ]
   },
@@ -284,8 +284,54 @@
    ]
   },
   {
-   "property": "stft_round_trip_reversible",
-   "invariant": "ISTFT(STFT(x)) ~= x at hop=N/4 (corr>0.999)",
+   "property": "kodak_audio_image_round_trip",
+   "invariant": "audio->image->audio corr>0.99 through 256x256 RGB layout",
+   "repo": "wubumath",
+   "seeds": 2,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.005
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.011
+    }
+   ]
+  },
+  {
+   "property": "pair_corpus_val_generalization",
+   "invariant": "recall@1/@5 on held-out val scenes above chance, monotone in k",
+   "repo": "wubumath",
+   "seeds": 2,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 30.717
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 32.819
+    }
+   ]
+  },
+  {
+   "property": "pframe_residual_rd_monotone",
+   "invariant": "residual recon error decreases with quant levels; exact bit count",
    "repo": "wubumath",
    "seeds": 2,
    "status": "HOLD",
@@ -303,6 +349,29 @@
      "rc": 0,
      "tail": "",
      "secs": 0.002
+    }
+   ]
+  },
+  {
+   "property": "stft_round_trip_reversible",
+   "invariant": "ISTFT(STFT(x)) ~= x at hop=N/4 (corr>0.999)",
+   "repo": "wubumath",
+   "seeds": 2,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.003
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.003
     }
    ]
   }
