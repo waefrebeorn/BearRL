@@ -122,6 +122,12 @@ PROPERTIES = [
         invariant="P-frame residual survives beam IR round trip; renderer blind; RD monotone",
     ),
     dict(
+        name="hyperbolic_attention_primitives",
+        repo="wubumath",
+        cmd="bin/test_hattn",
+        invariant="softmax matching sums to 1; gyromidpoint on-ball; identical-points identity",
+    ),
+    dict(
         name="lorentz_clip_hyperboloid",
         repo="wubumath",
         cmd="bin/test_lorclip",
