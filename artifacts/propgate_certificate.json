@@ -1,8 +1,8 @@
 {
  "certificate": {
-  "when": 1787546957,
-  "seeds_per_property": 3,
-  "total_properties": 8,
+  "when": 1787548861,
+  "seeds_per_property": 2,
+  "total_properties": 13,
   "violations": 0,
   "status": "ALL_HOLD"
  },
@@ -11,7 +11,7 @@
    "property": "quat_norm_preserved",
    "invariant": "FM trajectories stay inside Poincare ball (norm<1)",
    "repo": "wubumath",
-   "seeds": 3,
+   "seeds": 2,
    "status": "HOLD",
    "runs": [
     {
@@ -19,17 +19,10 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.003
     },
     {
      "seed": 1,
-     "ok": true,
-     "rc": 0,
-     "tail": "",
-     "secs": 0.002
-    },
-    {
-     "seed": 2,
      "ok": true,
      "rc": 0,
      "tail": "",
@@ -41,7 +34,7 @@
    "property": "target_velocity_tangent",
    "invariant": "geodesic target velocity keeps paths on-manifold & toward target",
    "repo": "wubumath",
-   "seeds": 3,
+   "seeds": 2,
    "status": "HOLD",
    "runs": [
     {
@@ -53,13 +46,6 @@
     },
     {
      "seed": 1,
-     "ok": true,
-     "rc": 0,
-     "tail": "",
-     "secs": 0.002
-    },
-    {
-     "seed": 2,
      "ok": true,
      "rc": 0,
      "tail": "",
@@ -71,7 +57,7 @@
    "property": "heun_solver_on_manifold",
    "invariant": "HEUN ODE output strictly inside ball; matches EULER family",
    "repo": "wubumath",
-   "seeds": 3,
+   "seeds": 2,
    "status": "HOLD",
    "runs": [
     {
@@ -83,13 +69,6 @@
     },
     {
      "seed": 1,
-     "ok": true,
-     "rc": 0,
-     "tail": "",
-     "secs": 0.002
-    },
-    {
-     "seed": 2,
      "ok": true,
      "rc": 0,
      "tail": "",
@@ -101,7 +80,7 @@
    "property": "mclip_geodesic_metric",
    "invariant": "d(x,x)=0, symmetric, triangle inequality on ball samples",
    "repo": "wubumath",
-   "seeds": 3,
+   "seeds": 2,
    "status": "HOLD",
    "runs": [
     {
@@ -109,21 +88,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.55
+     "secs": 0.671
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.555
-    },
-    {
-     "seed": 2,
-     "ok": true,
-     "rc": 0,
-     "tail": "",
-     "secs": 0.554
+     "secs": 0.673
     }
    ]
   },
@@ -131,7 +103,7 @@
    "property": "infonce_decreases",
    "invariant": "contrastive loss decreases under training; recall@1 > chance",
    "repo": "wubumath",
-   "seeds": 3,
+   "seeds": 2,
    "status": "HOLD",
    "runs": [
     {
@@ -139,21 +111,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.523
+     "secs": 0.674
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.524
-    },
-    {
-     "seed": 2,
-     "ok": true,
-     "rc": 0,
-     "tail": "",
-     "secs": 0.524
+     "secs": 0.676
     }
    ]
   },
@@ -161,7 +126,7 @@
    "property": "beam_invisible_band_never_renders",
    "invariant": "infrared band bytes never appear in renderer output",
    "repo": "wubumath",
-   "seeds": 3,
+   "seeds": 2,
    "status": "HOLD",
    "runs": [
     {
@@ -176,14 +141,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
-    },
-    {
-     "seed": 2,
-     "ok": true,
-     "rc": 0,
-     "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     }
    ]
   },
@@ -191,7 +149,7 @@
    "property": "beam_phi_order_progressive_uniformity",
    "invariant": "phi-order prefixes cover sweep near-uniformly (3-distance)",
    "repo": "wubumath",
-   "seeds": 3,
+   "seeds": 2,
    "status": "HOLD",
    "runs": [
     {
@@ -207,9 +165,117 @@
      "rc": 0,
      "tail": "",
      "secs": 0.001
+    }
+   ]
+  },
+  {
+   "property": "lorentz_flow_on_hyperboloid",
+   "invariant": "Lorentz geodesic interp/rollout keeps L(x,x)=-1, upper sheet",
+   "repo": "wubumath",
+   "seeds": 2,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.001
     },
     {
-     "seed": 2,
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.001
+    }
+   ]
+  },
+  {
+   "property": "mclip_learnable_curvature",
+   "invariant": "curvature moves during training and stays in sane band",
+   "repo": "wubumath",
+   "seeds": 2,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.675
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.672
+    }
+   ]
+  },
+  {
+   "property": "beam_mask_and_invisible_reader",
+   "invariant": "visibility mask matches registry; invisible reader recovers all cells",
+   "repo": "wubumath",
+   "seeds": 2,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    }
+   ]
+  },
+  {
+   "property": "perceptual_band_localization",
+   "invariant": "bass energy in band0, treble in band3, normalize preserves texture order",
+   "repo": "wubumath",
+   "seeds": 2,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    }
+   ]
+  },
+  {
+   "property": "quat_exp_log_round_trip",
+   "invariant": "log(exp(v))==v; slerp monotone; unit*product stays unit (fuzzed)",
+   "repo": "wubumath",
+   "seeds": 2,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    },
+    {
+     "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
@@ -221,7 +287,7 @@
    "property": "stft_round_trip_reversible",
    "invariant": "ISTFT(STFT(x)) ~= x at hop=N/4 (corr>0.999)",
    "repo": "wubumath",
-   "seeds": 3,
+   "seeds": 2,
    "status": "HOLD",
    "runs": [
     {
@@ -233,13 +299,6 @@
     },
     {
      "seed": 1,
-     "ok": true,
-     "rc": 0,
-     "tail": "",
-     "secs": 0.002
-    },
-    {
-     "seed": 2,
      "ok": true,
      "rc": 0,
      "tail": "",

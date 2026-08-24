@@ -68,6 +68,36 @@ PROPERTIES = [
         invariant="phi-order prefixes cover sweep near-uniformly (3-distance)",
     ),
     dict(
+        name="lorentz_flow_on_hyperboloid",
+        repo="wubumath",
+        cmd="bin/test_lorflow",
+        invariant="Lorentz geodesic interp/rollout keeps L(x,x)=-1, upper sheet",
+    ),
+    dict(
+        name="mclip_learnable_curvature",
+        repo="wubumath",
+        cmd="bin/test_manifold_clip",
+        invariant="curvature moves during training and stays in sane band",
+    ),
+    dict(
+        name="beam_mask_and_invisible_reader",
+        repo="wubumath",
+        cmd="bin/test_beam",
+        invariant="visibility mask matches registry; invisible reader recovers all cells",
+    ),
+    dict(
+        name="perceptual_band_localization",
+        repo="wubumath",
+        cmd="bin/test_bands",
+        invariant="bass energy in band0, treble in band3, normalize preserves texture order",
+    ),
+    dict(
+        name="quat_exp_log_round_trip",
+        repo="wubumath",
+        cmd="bin/test_quat_prop",
+        invariant="log(exp(v))==v; slerp monotone; unit*product stays unit (fuzzed)",
+    ),
+    dict(
         name="stft_round_trip_reversible",
         repo="wubumath",
         cmd="bin/test_stft",
