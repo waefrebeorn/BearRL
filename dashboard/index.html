@@ -62,6 +62,20 @@
 </section>
 
 <section>
+  <h2>Live training — quaternion geodesic reacher (BearRL env #1)</h2>
+  <canvas id="chart" width="660" height="220"></canvas>
+  <div class="grid" style="margin-top:10px">
+    <div class="stat"><b id="m-ep">—</b><span>Episode</span></div>
+    <div class="stat"><b id="m-dist">—</b><span>EMA geodesic dist</span></div>
+    <div class="stat"><b id="m-solve">—</b><span>Solve rate</span></div>
+  </div>
+  <p style="margin-top:10px;color:var(--dim);font-size:12.5px">
+    The agent learns to steer a unit-quaternion latent along its geodesic to a
+    target — the null-model every learned flow-matching P-frame field must beat.
+    Pure C11 REINFORCE, no deps. <span id="cert"></span></p>
+</section>
+
+<section>
   <h2>Campaign queue</h2>
   <ul>
     <li><span class="tag done">DONE</span> Extract src/bear → <b>BearRL</b> repo (PPO/GAE/MinGRU/Vulkan stack)</li>
@@ -142,6 +156,50 @@ function draw(){
   t++;requestAnimationFrame(draw);
 }
 draw();
+
+// ---- live training chart ----
+const ch=document.getElementById('chart'),cx=ch.getContext('2d');
+let series=[];
+function drawChart(){
+  cx.fillStyle='#0d1420';cx.fillRect(0,0,ch.width,ch.height);
+  if(series.length<2)return;
+  const xs=r=>40+(ch.width-60)*r.episode/series[series.length-1].episode;
+  const yd=v=>ch.height-30-(ch.height-50)*(1-Math.min(v,2)/2);
+  // geodesic distance curve
+  cx.strokeStyle='#e8b34b';cx.lineWidth=2;cx.beginPath();
+  series.forEach((r,i)=>{const x=xs(r),y=yd(r.ema_final_dist);i?cx.lineTo(x,y):cx.moveTo(x,y)});
+  cx.stroke();
+  // solve rate curve (scaled to its own max)
+  const smax=Math.max(0.001,Math.max(...series.map(r=>r.solve_rate)));
+  cx.strokeStyle='#39d0c4';cx.beginPath();
+  series.forEach((r,i)=>{const x=xs(r),y=ch.height-30-(ch.height-50)*(r.solve_rate/smax);i?cx.lineTo(x,y):cx.moveTo(x,y)});
+  cx.stroke();
+  // labels
+  cx.fillStyle='#7b8ba0';cx.font='10px monospace';
+  cx.fillText('geodesic dist ↓',44,yd(series[series.length-1].ema_final_dist)-6>14?yd(series[series.length-1].ema_final_dist)-6:16);
+  cx.fillText(`solve rate (max ${smax.toFixed(2)})`,ch.width-170,20);
+}
+async function poll(){
+  try{
+    const d=await(await fetch('/metrics.json')).json();
+    series=d.live;
+    if(series.length){
+      const r=series[series.length-1];
+      document.getElementById('m-ep').textContent=r.episode.toLocaleString();
+      document.getElementById('m-dist').textContent=r.ema_final_dist.toFixed(4);
+      document.getElementById('m-solve').textContent=(r.solve_rate*100).toFixed(1)+'%';
+    }
+    if(d.certificate&&d.certificate.greedy){
+      const g=d.certificate.greedy,f=d.certificate.final;
+      document.getElementById('cert').innerHTML=
+        `Certificate: greedy eval solve rate <b style="color:#39d0c4">${(g.solve_rate*100).toFixed(1)}%</b>`+
+        ` vs random baseline ${g.baseline_random_solve_rate*100}% · `+
+        `mean dist ${g.mean_final_dist.toFixed(3)} vs ${g.baseline_random_mean_dist.toFixed(3)}.`;
+    }
+    drawChart();
+  }catch(e){}
+}
+setInterval(poll,2000);poll();
 </script>
 </body>
 </html>
