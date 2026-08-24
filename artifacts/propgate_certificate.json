@@ -1,8 +1,8 @@
 {
  "certificate": {
-  "when": 1787555440,
+  "when": 1787557330,
   "seeds_per_property": 2,
-  "total_properties": 17,
+  "total_properties": 18,
   "violations": 0,
   "status": "ALL_HOLD"
  },
@@ -19,7 +19,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.04
+     "secs": 0.033
     },
     {
      "seed": 1,
@@ -42,14 +42,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.033
+     "secs": 0.034
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.029
+     "secs": 0.034
     }
    ]
   },
@@ -65,14 +65,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.038
+     "secs": 0.035
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.037
+     "secs": 0.035
     }
    ]
   },
@@ -88,14 +88,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.717
+     "secs": 0.659
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.711
+     "secs": 0.646
     }
    ]
   },
@@ -111,14 +111,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 3.365
+     "secs": 0.648
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.718
+     "secs": 0.652
     }
    ]
   },
@@ -180,7 +180,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     },
     {
      "seed": 1,
@@ -203,14 +203,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.704
+     "secs": 0.648
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.704
+     "secs": 0.696
     }
    ]
   },
@@ -302,7 +302,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.005
+     "secs": 0.007
     }
    ]
   },
@@ -318,14 +318,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 29.085
+     "secs": 32.213
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 31.837
+     "secs": 32.132
     }
    ]
   },
@@ -341,14 +341,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.034
+     "secs": 0.03
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.029
+     "secs": 0.03
     }
    ]
   },
@@ -364,14 +364,37 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.019
+     "secs": 0.018
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.018
+     "secs": 0.017
+    }
+   ]
+  },
+  {
+   "property": "uv_band_provenance",
+   "invariant": "UV watermark lossless; three bands coexist without cross-contamination",
+   "repo": "wubumath",
+   "seeds": 2,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
     }
    ]
   },
@@ -387,7 +410,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.003
     },
     {
      "seed": 1,
