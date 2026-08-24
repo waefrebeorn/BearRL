@@ -122,6 +122,12 @@ PROPERTIES = [
         invariant="P-frame residual survives beam IR round trip; renderer blind; RD monotone",
     ),
     dict(
+        name="rl_gae_and_policy_grad_properties",
+        repo="bearrl",
+        cmd="/tmp/rlprop",
+        invariant="GAE: zero-mean after norm, lambda endpoints exact, intermediate distinct; policy grad norm bounded by 1",
+    ),
+    dict(
         name="hyperbolic_mlr_classification",
         repo="wubumath",
         cmd="bin/test_hmlr",
