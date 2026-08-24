@@ -1,8 +1,8 @@
 {
  "certificate": {
-  "when": 1787558897,
+  "when": 1787559538,
   "seeds_per_property": 2,
-  "total_properties": 19,
+  "total_properties": 20,
   "violations": 0,
   "status": "ALL_HOLD"
  },
@@ -19,14 +19,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.034
+     "secs": 0.029
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.037
+     "secs": 0.032
     }
    ]
   },
@@ -42,14 +42,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.029
+     "secs": 0.026
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.033
+     "secs": 0.032
     }
    ]
   },
@@ -65,14 +65,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.036
+     "secs": 0.03
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.035
+     "secs": 0.032
     }
    ]
   },
@@ -88,14 +88,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.908
+     "secs": 0.854
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.961
+     "secs": 0.852
     }
    ]
   },
@@ -111,14 +111,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.915
+     "secs": 0.855
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.838
+     "secs": 0.851
     }
    ]
   },
@@ -164,7 +164,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     }
    ]
   },
@@ -203,14 +203,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.837
+     "secs": 0.855
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.922
+     "secs": 0.86
     }
    ]
   },
@@ -233,7 +233,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     }
    ]
   },
@@ -318,14 +318,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 32.022
+     "secs": 32.257
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 31.821
+     "secs": 32.034
     }
    ]
   },
@@ -341,14 +341,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.039
+     "secs": 0.034
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.04
+     "secs": 0.034
     }
    ]
   },
@@ -364,14 +364,37 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.02
+     "secs": 0.021
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.019
+     "secs": 0.017
+    }
+   ]
+  },
+  {
+   "property": "lorentz_clip_hyperboloid",
+   "invariant": "Lorentz lift keeps L=-1 upper sheet; distance symmetric; contrastive beats chance",
+   "repo": "wubumath",
+   "seeds": 2,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.034
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.034
     }
    ]
   },
@@ -387,14 +410,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.959
+     "secs": 0.998
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.923
+     "secs": 0.85
     }
    ]
   },
@@ -417,7 +440,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     }
    ]
   },

@@ -122,6 +122,12 @@ PROPERTIES = [
         invariant="P-frame residual survives beam IR round trip; renderer blind; RD monotone",
     ),
     dict(
+        name="lorentz_clip_hyperboloid",
+        repo="wubumath",
+        cmd="bin/test_lorclip",
+        invariant="Lorentz lift keeps L=-1 upper sheet; distance symmetric; contrastive beats chance",
+    ),
+    dict(
         name="mclip_meru_stability_recipe",
         repo="wubumath",
         cmd="bin/test_manifold_clip",
