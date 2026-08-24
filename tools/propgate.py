@@ -134,6 +134,12 @@ PROPERTIES = [
         invariant="HoPE: norm monotone in position; finite at 10K tokens; positions distinguishable",
     ),
     dict(
+        name="hyperbolic_kmeans_clustering",
+        repo="wubumath",
+        cmd="bin/test_hkmeans",
+        invariant="geodesic k-means recovers separated clusters >=80%; centroids on-ball; full assignment",
+    ),
+    dict(
         name="hyperbolic_mlr_classification",
         repo="wubumath",
         cmd="bin/test_hmlr",

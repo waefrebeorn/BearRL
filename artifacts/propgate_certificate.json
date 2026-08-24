@@ -1,8 +1,8 @@
 {
  "certificate": {
-  "when": 1787562970,
+  "when": 1787563690,
   "seeds_per_property": 2,
-  "total_properties": 26,
+  "total_properties": 27,
   "violations": 0,
   "status": "ALL_HOLD"
  },
@@ -19,14 +19,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.029
+     "secs": 0.037
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.037
+     "secs": 0.036
     }
    ]
   },
@@ -49,7 +49,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.033
+     "secs": 0.031
     }
    ]
   },
@@ -65,14 +65,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.031
+     "secs": 0.037
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.03
+     "secs": 0.034
     }
    ]
   },
@@ -88,14 +88,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.826
+     "secs": 0.902
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.828
+     "secs": 1.063
     }
    ]
   },
@@ -111,14 +111,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.844
+     "secs": 0.957
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.847
+     "secs": 0.902
     }
    ]
   },
@@ -157,14 +157,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     }
    ]
   },
@@ -203,14 +203,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.906
+     "secs": 0.917
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.846
+     "secs": 0.911
     }
    ]
   },
@@ -233,7 +233,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     }
    ]
   },
@@ -295,14 +295,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.004
+     "secs": 0.006
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.005
+     "secs": 0.006
     }
    ]
   },
@@ -318,14 +318,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 32.434
+     "secs": 32.097
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 32.234
+     "secs": 32.799
     }
    ]
   },
@@ -341,14 +341,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.027
+     "secs": 0.029
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.031
+     "secs": 0.03
     }
    ]
   },
@@ -364,14 +364,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.019
+     "secs": 0.016
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.017
+     "secs": 0.019
     }
    ]
   },
@@ -394,7 +394,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     }
    ]
   },
@@ -410,7 +410,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     },
     {
      "seed": 1,
@@ -418,6 +418,29 @@
      "rc": 0,
      "tail": "",
      "secs": 0.001
+    }
+   ]
+  },
+  {
+   "property": "hyperbolic_kmeans_clustering",
+   "invariant": "geodesic k-means recovers separated clusters >=80%; centroids on-ball; full assignment",
+   "repo": "wubumath",
+   "seeds": 2,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
     }
    ]
   },
@@ -433,14 +456,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.094
+     "secs": 0.09
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.194
+     "secs": 0.091
     }
    ]
   },
@@ -509,7 +532,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     }
    ]
   },
@@ -548,14 +571,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.837
+     "secs": 0.861
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.843
+     "secs": 0.852
     }
    ]
   },
@@ -571,14 +594,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.003
+     "secs": 0.001
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     }
    ]
   },
@@ -601,7 +624,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.003
     }
    ]
   }
