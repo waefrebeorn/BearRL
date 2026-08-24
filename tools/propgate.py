@@ -116,6 +116,12 @@ PROPERTIES = [
         invariant="residual recon error decreases with quant levels; exact bit count",
     ),
     dict(
+        name="pframe_infrared_pipeline",
+        repo="wubumath",
+        cmd="bin/test_pframe_ir",
+        invariant="P-frame residual survives beam IR round trip; renderer blind; RD monotone",
+    ),
+    dict(
         name="stft_round_trip_reversible",
         repo="wubumath",
         cmd="bin/test_stft",
