@@ -107,7 +107,68 @@ Solved-env logs = proof certificates (committed, no verbal results).
 5. Strict C11 · no monoliths · opaque struct seams · standalone test targets ·
    CPU soft fallback for all GPU paths.
 
-## 4. Work queue
+## 4. Visible light / invisible light — dual-band encoding (2026-08-24)
+
+The canvas already has this shape: visible lines = video, VBI/HBI = audio.
+Generalize it into a **two-spectrum frame**:
+
+- **Visible band** ("light"): the actual pixels the decoder renders.
+- **Invisible band** ("infrared"): a parallel sweep carrying audio + video
+  *processing* data — flow-matching conditioning, P-frame residuals, motion
+  geodesics, sideband metadata. Never rendered; only read by the codec.
+
+Because both bands share the SAME beam sweep and coordinate space, double
+encoding costs **no extra canvas** — invisible data occupies coordinates the
+renderer ignores (the HBI trick generalized to everything). The audio-sideband
+fidelity trainer (§2.4) becomes one instance of this: infrared carries audio,
+and its reconstruction error supervises the visible band's flow fields.
+
+Extension idea: further bands beyond infrared (UV = provenance/watermark,
+etc.) — each is just more reserved sweep segments. The frame format scales
+spectrally, not spatially.
+
+## 5. The brain moment — manifold CLIP
+
+Status check, honestly stated: audio encoded ✅ (Kodak/VHF), video encoded ✅
+(Hamilton encoder), flow-matched ideas in progress ✅ (tangent-flow trainer).
+But there is no CLIP yet — and CLIP is the piece that makes modalities
+*address each other*.
+
+What CLIP actually is, stripped down: **2D-array linear algebra** — two
+projection matrices W_img, W_txt mapping into a shared ℝⁿ, one cosine
+similarity matrix, InfoNCE. That's the whole trick. It works because flat
+linear algebra is cheap — not because flat space is right.
+
+The WuBu version replaces every ingredient with its manifold counterpart
+(all components exist in WuBuMath C11):
+
+| CLIP ingredient | Manifold version | Existing C11 |
+|---|---|---|
+| Embedding space ℝⁿ | Nested hyperbolic balls `H^n_{c,s}` (WuBu Nesting) | `wubu_hyperbolic.c`, `wubu_lorentz_poincare.c` |
+| Projection matrix W | Exp/Log map pair per modality (log → tangent → exp) | `wubu_manifold_ad.c` |
+| Cosine similarity | Geodesic distance on Poincaré ball (+ quaternion inner product for rotation-aware pairs) | `wubu_poincare_geom.c`, `wubu_quaternion_ops.c` |
+| Inter-level transition | SO(n) rotations R_i between levels | `wubu_so3.c` |
+| Contrastive gradient step | Riemannian SGD on curvature c_i and scale s_i too | `wubu_riemannian_sgd.c` |
+| Modality pairing | Audio↔image already proven reversible (Zephyr-HD); text joins via chunk embeddings | `wubumind_codec.py` lineage |
+
+Why it should WIN, not just differ: hierarchy is where hyperbolic space beats
+Euclidean outright. "A dog" vs "a photo of a dog running in snow" is a
+*tree* of concepts; CLIP crams that tree into flat vectors and pays distortion.
+Hyperbolic contrastive learning embeds trees at exponentially lower distortion
+(Nickel-Kiela lineage). Nobody ships a production multimodal encoder on nested
+hyperbolic manifolds. This is the gap.
+
+Training signal comes free from the existing stack: image-text pairs from the
+footage pipeline, audio-image pairs from the Kodak round-trip, and BearRL can
+run the contrastive objective as an environment (reward = retrieval accuracy)
+per the reward-as-proof doctrine.
+
+"Calculus 3 LLM" note: not built yet — the nest_gpt slot exists
+(`wubu_nest_gpt.c`) but untrained. The manifold-CLIP embedding layer is its
+correct front door when we get there: language enters through the same
+hyperbolic nesting instead of a separate token head.
+
+## 6. Work queue
 
 1. [x] Extract src/bear → BearRL repo
 2. [ ] Build lib + revive unit targets standalone (drop WuBuOS mk deps)
@@ -116,3 +177,7 @@ Solved-env logs = proof certificates (committed, no verbal results).
 5. [ ] Wire WuBuMath wubu_canvas as an observation space (canvas = obs)
 6. [ ] φ-sweep locality env → certificate
 7. [ ] Audio-sideband fidelity env → certificate
+8. [ ] Dual-band frame format: visible + infrared sweep segments (spec + round-trip test)
+9. [ ] **Manifold CLIP**: hyperbolic contrastive encoder — geodesic-similarity InfoNCE, Riemannian SGD on c_i/s_i
+10. [ ] Manifold-CLIP retrieval env in BearRL (reward = recall@k) → certificate
+11. [ ] nest_gpt front door: language enters through the manifold embedding
