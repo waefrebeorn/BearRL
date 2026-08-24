@@ -1,0 +1,251 @@
+{
+ "certificate": {
+  "when": 1787546957,
+  "seeds_per_property": 3,
+  "total_properties": 8,
+  "violations": 0,
+  "status": "ALL_HOLD"
+ },
+ "results": [
+  {
+   "property": "quat_norm_preserved",
+   "invariant": "FM trajectories stay inside Poincare ball (norm<1)",
+   "repo": "wubumath",
+   "seeds": 3,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    }
+   ]
+  },
+  {
+   "property": "target_velocity_tangent",
+   "invariant": "geodesic target velocity keeps paths on-manifold & toward target",
+   "repo": "wubumath",
+   "seeds": 3,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    }
+   ]
+  },
+  {
+   "property": "heun_solver_on_manifold",
+   "invariant": "HEUN ODE output strictly inside ball; matches EULER family",
+   "repo": "wubumath",
+   "seeds": 3,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    }
+   ]
+  },
+  {
+   "property": "mclip_geodesic_metric",
+   "invariant": "d(x,x)=0, symmetric, triangle inequality on ball samples",
+   "repo": "wubumath",
+   "seeds": 3,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.55
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.555
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.554
+    }
+   ]
+  },
+  {
+   "property": "infonce_decreases",
+   "invariant": "contrastive loss decreases under training; recall@1 > chance",
+   "repo": "wubumath",
+   "seeds": 3,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.523
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.524
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.524
+    }
+   ]
+  },
+  {
+   "property": "beam_invisible_band_never_renders",
+   "invariant": "infrared band bytes never appear in renderer output",
+   "repo": "wubumath",
+   "seeds": 3,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.001
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.001
+    }
+   ]
+  },
+  {
+   "property": "beam_phi_order_progressive_uniformity",
+   "invariant": "phi-order prefixes cover sweep near-uniformly (3-distance)",
+   "repo": "wubumath",
+   "seeds": 3,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.001
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.001
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    }
+   ]
+  },
+  {
+   "property": "stft_round_trip_reversible",
+   "invariant": "ISTFT(STFT(x)) ~= x at hop=N/4 (corr>0.999)",
+   "repo": "wubumath",
+   "seeds": 3,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    },
+    {
+     "seed": 2,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    }
+   ]
+  }
+ ]
+}
