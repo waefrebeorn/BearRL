@@ -134,6 +134,12 @@ PROPERTIES = [
         invariant="HoPE: norm monotone in position; finite at 10K tokens; positions distinguishable",
     ),
     dict(
+        name="ldirect_tangent_free_linear",
+        repo="wubumath",
+        cmd="bin/test_ldirect",
+        invariant="tangent-free Lorentz linear: output on hyperboloid, identity reproduces, bias dominates",
+    ),
+    dict(
         name="hyperbolic_kmeans_clustering",
         repo="wubumath",
         cmd="bin/test_hkmeans",

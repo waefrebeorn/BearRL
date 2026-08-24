@@ -1,8 +1,8 @@
 {
  "certificate": {
-  "when": 1787563690,
+  "when": 1787564474,
   "seeds_per_property": 2,
-  "total_properties": 27,
+  "total_properties": 28,
   "violations": 0,
   "status": "ALL_HOLD"
  },
@@ -19,14 +19,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.037
+     "secs": 0.034
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.036
+     "secs": 0.03
     }
    ]
   },
@@ -42,14 +42,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.032
+     "secs": 0.036
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.031
+     "secs": 0.038
     }
    ]
   },
@@ -65,14 +65,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.037
+     "secs": 0.038
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.034
+     "secs": 0.028
     }
    ]
   },
@@ -88,14 +88,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.902
+     "secs": 0.83
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 1.063
+     "secs": 0.831
     }
    ]
   },
@@ -111,14 +111,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.957
+     "secs": 0.842
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.902
+     "secs": 0.894
     }
    ]
   },
@@ -157,7 +157,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     },
     {
      "seed": 1,
@@ -180,14 +180,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     }
    ]
   },
@@ -203,14 +203,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.917
+     "secs": 0.831
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.911
+     "secs": 0.835
     }
    ]
   },
@@ -295,14 +295,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.006
+     "secs": 0.004
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.006
+     "secs": 0.005
     }
    ]
   },
@@ -318,14 +318,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 32.097
+     "secs": 32.02
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 32.799
+     "secs": 32.796
     }
    ]
   },
@@ -341,14 +341,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.029
+     "secs": 0.035
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.03
+     "secs": 0.034
     }
    ]
   },
@@ -364,14 +364,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.016
+     "secs": 0.017
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.019
+     "secs": 0.016
     }
    ]
   },
@@ -387,14 +387,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     }
    ]
   },
@@ -410,7 +410,30 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.001
+    }
+   ]
+  },
+  {
+   "property": "ldirect_tangent_free_linear",
+   "invariant": "tangent-free Lorentz linear: output on hyperboloid, identity reproduces, bias dominates",
+   "repo": "wubumath",
+   "seeds": 2,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.001
     },
     {
      "seed": 1,
@@ -433,14 +456,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     }
    ]
   },
@@ -532,7 +555,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     }
    ]
   },
@@ -548,14 +571,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.033
+     "secs": 0.032
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.033
+     "secs": 0.032
     }
    ]
   },
@@ -571,14 +594,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.861
+     "secs": 0.835
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.852
+     "secs": 0.842
     }
    ]
   },
@@ -594,7 +617,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     },
     {
      "seed": 1,
@@ -624,7 +647,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.003
+     "secs": 0.002
     }
    ]
   }
