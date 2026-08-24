@@ -122,6 +122,12 @@ PROPERTIES = [
         invariant="P-frame residual survives beam IR round trip; renderer blind; RD monotone",
     ),
     dict(
+        name="uv_band_provenance",
+        repo="wubumath",
+        cmd="bin/test_uv",
+        invariant="UV watermark lossless; three bands coexist without cross-contamination",
+    ),
+    dict(
         name="stft_round_trip_reversible",
         repo="wubumath",
         cmd="bin/test_stft",
