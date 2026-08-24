@@ -1,8 +1,8 @@
 {
  "certificate": {
-  "when": 1787560930,
+  "when": 1787561407,
   "seeds_per_property": 2,
-  "total_properties": 22,
+  "total_properties": 23,
   "violations": 0,
   "status": "ALL_HOLD"
  },
@@ -19,7 +19,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.032
+     "secs": 0.036
     },
     {
      "seed": 1,
@@ -42,14 +42,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.025
+     "secs": 0.033
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.027
+     "secs": 0.033
     }
    ]
   },
@@ -65,14 +65,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.029
+     "secs": 0.035
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.028
+     "secs": 0.034
     }
    ]
   },
@@ -88,14 +88,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.818
+     "secs": 0.89
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.816
+     "secs": 0.94
     }
    ]
   },
@@ -111,14 +111,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.921
+     "secs": 0.894
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.843
+     "secs": 0.875
     }
    ]
   },
@@ -157,14 +157,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     }
    ]
   },
@@ -203,14 +203,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.828
+     "secs": 0.852
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.829
+     "secs": 0.852
     }
    ]
   },
@@ -272,7 +272,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     },
     {
      "seed": 1,
@@ -318,14 +318,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 32.944
+     "secs": 33.33
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 32.894
+     "secs": 32.734
     }
    ]
   },
@@ -341,14 +341,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.033
+     "secs": 0.03
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.031
+     "secs": 0.032
     }
    ]
   },
@@ -364,14 +364,37 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.016
+     "secs": 0.017
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.016
+     "secs": 0.022
+    }
+   ]
+  },
+  {
+   "property": "hyperbolic_activation",
+   "invariant": "log0->act->exp0 keeps output on hyperboloid, upper sheet; ReLU zeroes negatives",
+   "repo": "wubumath",
+   "seeds": 2,
+   "status": "HOLD",
+   "runs": [
+    {
+     "seed": 0,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.002
+    },
+    {
+     "seed": 1,
+     "ok": true,
+     "rc": 0,
+     "tail": "",
+     "secs": 0.001
     }
    ]
   },
@@ -387,14 +410,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     }
    ]
   },
@@ -410,14 +433,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.002
+     "secs": 0.001
     }
    ]
   },
@@ -433,14 +456,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.032
+     "secs": 0.036
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.032
+     "secs": 0.034
     }
    ]
   },
@@ -456,14 +479,14 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.817
+     "secs": 0.848
     },
     {
      "seed": 1,
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.862
+     "secs": 0.842
     }
    ]
   },
@@ -486,7 +509,7 @@
      "ok": true,
      "rc": 0,
      "tail": "",
-     "secs": 0.001
+     "secs": 0.002
     }
    ]
   },

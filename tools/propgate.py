@@ -122,6 +122,12 @@ PROPERTIES = [
         invariant="P-frame residual survives beam IR round trip; renderer blind; RD monotone",
     ),
     dict(
+        name="hyperbolic_activation",
+        repo="wubumath",
+        cmd="bin/test_hact",
+        invariant="log0->act->exp0 keeps output on hyperboloid, upper sheet; ReLU zeroes negatives",
+    ),
+    dict(
         name="hyperboloid_linear_layer",
         repo="wubumath",
         cmd="bin/test_hlin",
