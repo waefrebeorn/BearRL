@@ -1,5 +1,11 @@
 # BEAR_RL_MANIFEST.md — the full idea mixture, written down (2026-08-24)
 
+> **ORIENTATION:** BearRL = the RL ENVIRONMENT + proof engine.
+> WuBuMath = the math library (manifolds, encoders, codec math) that these
+> environments observe and prove. Dependency: BearRL links WuBuMath, never
+> the reverse. Full split + work division:
+> WuBuMath `docs/WUBUMATH_BEAR_INTEGRATION.md`.
+
 This document is the durable record of the 2026-08-24 session: the codec idea
 mixture, the lineage, the harness philosophy, and the work queue. Nothing here
 is speculative memory — every claim traces to a file in waefrebeorn repos.
