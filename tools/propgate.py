@@ -122,6 +122,12 @@ PROPERTIES = [
         invariant="P-frame residual survives beam IR round trip; renderer blind; RD monotone",
     ),
     dict(
+        name="mclip_meru_stability_recipe",
+        repo="wubumath",
+        cmd="bin/test_manifold_clip",
+        invariant="entail_weight honored; per-modality alphas learn; tau floor + curvature clamp held",
+    ),
+    dict(
         name="uv_band_provenance",
         repo="wubumath",
         cmd="bin/test_uv",
