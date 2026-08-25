@@ -1,11 +1,11 @@
 {
- "gaps_closed": 66,
+ "gaps_closed": 67,
  "closed_ids_sample": [
-  "D026",
   "D027",
   "D028",
   "D029",
   "D030",
+  "D031",
   "E006",
   "E007",
   "E008",
@@ -14,9 +14,8 @@
   "H015",
   "H016"
  ],
- "suites_wired": 100,
+ "suites_wired": 101,
  "suite_names_sample": [
-  "test_riemannian_sgd",
   "test_rp",
   "test_rsgd",
   "test_slerp",
@@ -26,10 +25,11 @@
   "test_tangent_flow",
   "test_text_encoder",
   "test_tree",
+  "test_um",
   "test_uv",
   "test_vhf_engine"
  ],
- "modules": 100,
+ "modules": 101,
  "module_names_sample": [
   "wubu_rsgd.c",
   "wubu_slerp_path.c",
@@ -46,6 +46,6 @@
  ],
  "gate_bugs_caught": 17,
  "bearrl_properties": 28,
- "last_commit": "f73d7ad GAP CLOSURE A008: hyperbolic beam search \u2014 path hypotheses, geodesic expansion, score pruning. hbm 3/3. Register: 105 closed, 91 suites.",
- "generated_at_epoch": 1787627528.8206801
+ "last_commit": "019e325 GAP CLOSURE D031: hyperbolic SupCon \u2014 geodesic supervised contrastive with label-sim weighting. Good 1.10 vs bad 5.12. hsc 3/3. Register: 106 closed, 92 suites.",
+ "generated_at_epoch": 1787627903.8605964
 }
