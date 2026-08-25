@@ -1,7 +1,6 @@
 {
- "gaps_closed": 60,
+ "gaps_closed": 62,
  "closed_ids_sample": [
-  "D025",
   "D026",
   "D027",
   "D028",
@@ -12,9 +11,10 @@
   "E008",
   "H012",
   "H013",
-  "H015"
+  "H015",
+  "H016"
  ],
- "suites_wired": 94,
+ "suites_wired": 95,
  "suite_names_sample": [
   "test_rep",
   "test_riemannian_sgd",
@@ -29,7 +29,7 @@
   "test_uv",
   "test_vhf_engine"
  ],
- "modules": 94,
+ "modules": 95,
  "module_names_sample": [
   "wubu_riemannian_sgd.c",
   "wubu_rsgd.c",
@@ -46,6 +46,6 @@
  ],
  "gate_bugs_caught": 12,
  "bearrl_properties": 28,
- "last_commit": "21be2ee GAP CLOSURE H015: hyperbolic PPO \u2014 geodesic-Gaussian ratio + clipped surrogate. hp 3/3. Register: 99 closed, 85 suites. ONE AWAY FROM 100.",
- "generated_at_epoch": 1787625105.4133782
+ "last_commit": "b06b3d5 GAP CLOSURE B017: attention entropy monitor \u2014 Shannon entropy + collapse flag. ae2 3/3. Register: 101 closed, 87 suites.",
+ "generated_at_epoch": 1787625580.7477825
 }
