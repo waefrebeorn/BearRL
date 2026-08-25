@@ -1,7 +1,6 @@
 {
- "gaps_closed": 73,
+ "gaps_closed": 74,
  "closed_ids_sample": [
-  "D031",
   "D032",
   "D033",
   "D034",
@@ -9,12 +8,13 @@
   "E006",
   "E007",
   "E008",
+  "E009",
   "H012",
   "H013",
   "H015",
   "H016"
  ],
- "suites_wired": 107,
+ "suites_wired": 108,
  "suite_names_sample": [
   "test_rsgd",
   "test_sil",
@@ -29,7 +29,7 @@
   "test_uv",
   "test_vhf_engine"
  ],
- "modules": 107,
+ "modules": 108,
  "module_names_sample": [
   "wubu_silhouette.c",
   "wubu_slerp_path.c",
@@ -46,6 +46,6 @@
  ],
  "gate_bugs_caught": 19,
  "bearrl_properties": 28,
- "last_commit": "2a89620 GAP CLOSURE C047: hyperbolic hierarchical softmax \u2014 child-distance sigmoid branches, log-depth routing. Found+fixed bug#19 (branch scoring) + walk inversion. hts2 3/3. Register: 112 closed, 98 suites.",
- "generated_at_epoch": 1787630418.43474
+ "last_commit": "bbd031e GAP CLOSURE E009: hyperbolic RVQ \u2014 staged codebooks, monotone refinement, 32x compression. hpq 3/3. Register: 113 closed, 99 suites.",
+ "generated_at_epoch": 1787630786.0281835
 }
