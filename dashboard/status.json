@@ -1,5 +1,5 @@
 {
- "gaps_closed": 72,
+ "gaps_closed": 73,
  "closed_ids_sample": [
   "D031",
   "D032",
@@ -14,7 +14,7 @@
   "H015",
   "H016"
  ],
- "suites_wired": 106,
+ "suites_wired": 107,
  "suite_names_sample": [
   "test_rsgd",
   "test_sil",
@@ -29,7 +29,7 @@
   "test_uv",
   "test_vhf_engine"
  ],
- "modules": 106,
+ "modules": 107,
  "module_names_sample": [
   "wubu_silhouette.c",
   "wubu_slerp_path.c",
@@ -44,8 +44,8 @@
   "wubu_vhf_decoder.c",
   "wubu_vhf_engine.c"
  ],
- "gate_bugs_caught": 18,
+ "gate_bugs_caught": 19,
  "bearrl_properties": 28,
- "last_commit": "0764c62 GAP CLOSURE C046: hyperbolic grad clipping \u2014 conformal-aware riemannian-norm clip. Found+fixed bug#18. hc 3/3. Register: 111 closed, 97 suites.",
- "generated_at_epoch": 1787630014.6874728
+ "last_commit": "2a89620 GAP CLOSURE C047: hyperbolic hierarchical softmax \u2014 child-distance sigmoid branches, log-depth routing. Found+fixed bug#19 (branch scoring) + walk inversion. hts2 3/3. Register: 112 closed, 98 suites.",
+ "generated_at_epoch": 1787630418.43474
 }
