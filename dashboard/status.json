@@ -1,11 +1,11 @@
 {
- "gaps_closed": 69,
+ "gaps_closed": 70,
  "closed_ids_sample": [
-  "D029",
   "D030",
   "D031",
   "D032",
   "D033",
+  "D034",
   "E006",
   "E007",
   "E008",
@@ -14,7 +14,7 @@
   "H015",
   "H016"
  ],
- "suites_wired": 103,
+ "suites_wired": 104,
  "suite_names_sample": [
   "test_rsgd",
   "test_sil",
@@ -29,7 +29,7 @@
   "test_uv",
   "test_vhf_engine"
  ],
- "modules": 103,
+ "modules": 104,
  "module_names_sample": [
   "wubu_silhouette.c",
   "wubu_slerp_path.c",
@@ -46,6 +46,6 @@
  ],
  "gate_bugs_caught": 17,
  "bearrl_properties": 28,
- "last_commit": "7f59d7f GAP CLOSURE D033: hyperbolic k-means++ \u2014 D^2 geodesic seeding, 20/20 both-blob coverage. kpp 3/3. Register: 108 closed, 94 suites.",
- "generated_at_epoch": 1787628560.4566996
+ "last_commit": "6f867a8 GAP CLOSURE D034: hyperbolic silhouette \u2014 geodesic validity score, correct 0.994 vs wrong -0.248. sil 3/3. Register: 109 closed, 95 suites.",
+ "generated_at_epoch": 1787628911.6990888
 }
