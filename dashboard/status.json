@@ -1,0 +1,51 @@
+{
+ "gaps_closed": 60,
+ "closed_ids_sample": [
+  "D025",
+  "D026",
+  "D027",
+  "D028",
+  "D029",
+  "D030",
+  "E006",
+  "E007",
+  "E008",
+  "H012",
+  "H013",
+  "H015"
+ ],
+ "suites_wired": 94,
+ "suite_names_sample": [
+  "test_rep",
+  "test_riemannian_sgd",
+  "test_rp",
+  "test_rsgd",
+  "test_slerp",
+  "test_so3",
+  "test_stft",
+  "test_tangent_flow",
+  "test_text_encoder",
+  "test_tree",
+  "test_uv",
+  "test_vhf_engine"
+ ],
+ "modules": 94,
+ "module_names_sample": [
+  "wubu_riemannian_sgd.c",
+  "wubu_rsgd.c",
+  "wubu_slerp_path.c",
+  "wubu_so3.c",
+  "wubu_stft.c",
+  "wubu_tangent_flow.c",
+  "wubu_text_encoder.c",
+  "wubu_tree_embed.c",
+  "wubu_utils.c",
+  "wubu_vhf_audio.c",
+  "wubu_vhf_decoder.c",
+  "wubu_vhf_engine.c"
+ ],
+ "gate_bugs_caught": 12,
+ "bearrl_properties": 28,
+ "last_commit": "21be2ee GAP CLOSURE H015: hyperbolic PPO \u2014 geodesic-Gaussian ratio + clipped surrogate. hp 3/3. Register: 99 closed, 85 suites. ONE AWAY FROM 100.",
+ "generated_at_epoch": 1787625105.4133782
+}
