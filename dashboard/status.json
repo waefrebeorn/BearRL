@@ -1,5 +1,5 @@
 {
- "gaps_closed": 76,
+ "gaps_closed": 77,
  "closed_ids_sample": [
   "D033",
   "D034",
@@ -14,7 +14,7 @@
   "H015",
   "H016"
  ],
- "suites_wired": 110,
+ "suites_wired": 111,
  "suite_names_sample": [
   "test_sil",
   "test_slerp",
@@ -29,7 +29,7 @@
   "test_uv",
   "test_vhf_engine"
  ],
- "modules": 110,
+ "modules": 111,
  "module_names_sample": [
   "wubu_slerp_path.c",
   "wubu_so3.c",
@@ -46,6 +46,6 @@
  ],
  "gate_bugs_caught": 19,
  "bearrl_properties": 28,
- "last_commit": "6314559 GAP CLOSURE D036: hyperbolic TransE \u2014 mobius translation scoring, geodesic margin training. Loss 1.01->0.66, mean rank 2.4/6. kg 3/3. Register: 115 closed, 101 suites.",
- "generated_at_epoch": 1787631629.5063643
+ "last_commit": "ff6bf81 GAP CLOSURE C048: hyperbolic temporal conv \u2014 local tangent sliding window, gyro pooling. Jitter cut 3.3x. tcv 3/3. Register: 116 closed, 102 suites.",
+ "generated_at_epoch": 1787632007.4515417
 }
