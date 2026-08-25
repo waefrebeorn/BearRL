@@ -14,13 +14,13 @@
   "H015",
   "H016"
  ],
- "suites_wired": 95,
+ "suites_wired": 96,
  "suite_names_sample": [
-  "test_rep",
   "test_riemannian_sgd",
   "test_rp",
   "test_rsgd",
   "test_slerp",
+  "test_sn",
   "test_so3",
   "test_stft",
   "test_tangent_flow",
@@ -29,12 +29,12 @@
   "test_uv",
   "test_vhf_engine"
  ],
- "modules": 95,
+ "modules": 96,
  "module_names_sample": [
-  "wubu_riemannian_sgd.c",
   "wubu_rsgd.c",
   "wubu_slerp_path.c",
   "wubu_so3.c",
+  "wubu_specnorm.c",
   "wubu_stft.c",
   "wubu_tangent_flow.c",
   "wubu_text_encoder.c",
@@ -47,5 +47,5 @@
  "gate_bugs_caught": 12,
  "bearrl_properties": 28,
  "last_commit": "b06b3d5 GAP CLOSURE B017: attention entropy monitor \u2014 Shannon entropy + collapse flag. ae2 3/3. Register: 101 closed, 87 suites.",
- "generated_at_epoch": 1787625580.7477825
+ "generated_at_epoch": 1787625982.6561925
 }
