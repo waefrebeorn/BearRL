@@ -1,5 +1,5 @@
 {
- "gaps_closed": 63,
+ "gaps_closed": 64,
  "closed_ids_sample": [
   "D026",
   "D027",
@@ -14,7 +14,7 @@
   "H015",
   "H016"
  ],
- "suites_wired": 97,
+ "suites_wired": 98,
  "suite_names_sample": [
   "test_riemannian_sgd",
   "test_rp",
@@ -29,7 +29,7 @@
   "test_uv",
   "test_vhf_engine"
  ],
- "modules": 97,
+ "modules": 98,
  "module_names_sample": [
   "wubu_rsgd.c",
   "wubu_slerp_path.c",
@@ -46,6 +46,6 @@
  ],
  "gate_bugs_caught": 16,
  "bearrl_properties": 28,
- "last_commit": "41896a1 GAP CLOSURE C043: spectral normalization \u2014 power-iteration sigma estimate + Lipschitz cap. Found+fixed bug#16 (sigma^2 measurement). sn 3/3. Register: 102 closed, 88 suites.",
- "generated_at_epoch": 1787626315.8228343
+ "last_commit": "a5779ce GAP CLOSURE C044: hyperbolic MoE \u2014 geodesic-distance gate, top-k routing, gyromidpoint combine, load balance. moe 3/3. Register: 103 closed, 89 suites.",
+ "generated_at_epoch": 1787626664.2686942
 }
