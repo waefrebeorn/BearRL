@@ -1,10 +1,10 @@
 {
- "gaps_closed": 75,
+ "gaps_closed": 76,
  "closed_ids_sample": [
-  "D032",
   "D033",
   "D034",
   "D035",
+  "D036",
   "E006",
   "E007",
   "E008",
@@ -14,29 +14,29 @@
   "H015",
   "H016"
  ],
- "suites_wired": 109,
+ "suites_wired": 110,
  "suite_names_sample": [
-  "test_rsgd",
   "test_sil",
   "test_slerp",
   "test_sn",
   "test_so3",
   "test_stft",
   "test_tangent_flow",
+  "test_tcv",
   "test_text_encoder",
   "test_tree",
   "test_um",
   "test_uv",
   "test_vhf_engine"
  ],
- "modules": 109,
+ "modules": 110,
  "module_names_sample": [
-  "wubu_silhouette.c",
   "wubu_slerp_path.c",
   "wubu_so3.c",
   "wubu_specnorm.c",
   "wubu_stft.c",
   "wubu_tangent_flow.c",
+  "wubu_tconv.c",
   "wubu_text_encoder.c",
   "wubu_tree_embed.c",
   "wubu_utils.c",
@@ -46,6 +46,6 @@
  ],
  "gate_bugs_caught": 19,
  "bearrl_properties": 28,
- "last_commit": "fa4aa7d GAP CLOSURE B018: multi-hop geodesic aggregation \u2014 BFS hops, exp decay, local tangent averaging. mh 3/3. Register: 114 closed, 100 suites. \ud83d\udcaf SUITES",
- "generated_at_epoch": 1787631257.6038318
+ "last_commit": "6314559 GAP CLOSURE D036: hyperbolic TransE \u2014 mobius translation scoring, geodesic margin training. Loss 1.01->0.66, mean rank 2.4/6. kg 3/3. Register: 115 closed, 101 suites.",
+ "generated_at_epoch": 1787631629.5063643
 }
