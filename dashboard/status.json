@@ -1,11 +1,11 @@
 {
- "gaps_closed": 67,
+ "gaps_closed": 68,
  "closed_ids_sample": [
-  "D027",
   "D028",
   "D029",
   "D030",
   "D031",
+  "D032",
   "E006",
   "E007",
   "E008",
@@ -14,7 +14,7 @@
   "H015",
   "H016"
  ],
- "suites_wired": 101,
+ "suites_wired": 102,
  "suite_names_sample": [
   "test_rp",
   "test_rsgd",
@@ -29,7 +29,7 @@
   "test_uv",
   "test_vhf_engine"
  ],
- "modules": 101,
+ "modules": 102,
  "module_names_sample": [
   "wubu_rsgd.c",
   "wubu_slerp_path.c",
@@ -46,6 +46,6 @@
  ],
  "gate_bugs_caught": 17,
  "bearrl_properties": 28,
- "last_commit": "019e325 GAP CLOSURE D031: hyperbolic SupCon \u2014 geodesic supervised contrastive with label-sim weighting. Good 1.10 vs bad 5.12. hsc 3/3. Register: 106 closed, 92 suites.",
- "generated_at_epoch": 1787627903.8605964
+ "last_commit": "e2e0bf5 GAP CLOSURE D032: hyperbolic UMAP \u2014 fuzzy k-NN weights + ball cross entropy. Structured 0.807 vs scrambled inf. um 3/3. Register: 107 closed, 93 suites.",
+ "generated_at_epoch": 1787628219.2826436
 }
