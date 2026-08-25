@@ -1,5 +1,5 @@
 {
- "gaps_closed": 64,
+ "gaps_closed": 65,
  "closed_ids_sample": [
   "D026",
   "D027",
@@ -14,7 +14,7 @@
   "H015",
   "H016"
  ],
- "suites_wired": 98,
+ "suites_wired": 99,
  "suite_names_sample": [
   "test_riemannian_sgd",
   "test_rp",
@@ -29,7 +29,7 @@
   "test_uv",
   "test_vhf_engine"
  ],
- "modules": 98,
+ "modules": 99,
  "module_names_sample": [
   "wubu_rsgd.c",
   "wubu_slerp_path.c",
@@ -44,8 +44,8 @@
   "wubu_vhf_decoder.c",
   "wubu_vhf_engine.c"
  ],
- "gate_bugs_caught": 16,
+ "gate_bugs_caught": 17,
  "bearrl_properties": 28,
- "last_commit": "a5779ce GAP CLOSURE C044: hyperbolic MoE \u2014 geodesic-distance gate, top-k routing, gyromidpoint combine, load balance. moe 3/3. Register: 103 closed, 89 suites.",
- "generated_at_epoch": 1787626664.2686942
+ "last_commit": "6b6acb0 GAP CLOSURE C045: hyperbolic dropout \u2014 log0->tangent dropout->exp0. Found+fixed bug#17 (log0 factor). hd2 3/3. Register: 104 closed, 90 suites.",
+ "generated_at_epoch": 1787627121.989153
 }
