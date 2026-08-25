@@ -1,5 +1,5 @@
 {
- "gaps_closed": 62,
+ "gaps_closed": 63,
  "closed_ids_sample": [
   "D026",
   "D027",
@@ -14,7 +14,7 @@
   "H015",
   "H016"
  ],
- "suites_wired": 96,
+ "suites_wired": 97,
  "suite_names_sample": [
   "test_riemannian_sgd",
   "test_rp",
@@ -29,7 +29,7 @@
   "test_uv",
   "test_vhf_engine"
  ],
- "modules": 96,
+ "modules": 97,
  "module_names_sample": [
   "wubu_rsgd.c",
   "wubu_slerp_path.c",
@@ -44,8 +44,8 @@
   "wubu_vhf_decoder.c",
   "wubu_vhf_engine.c"
  ],
- "gate_bugs_caught": 12,
+ "gate_bugs_caught": 16,
  "bearrl_properties": 28,
- "last_commit": "b06b3d5 GAP CLOSURE B017: attention entropy monitor \u2014 Shannon entropy + collapse flag. ae2 3/3. Register: 101 closed, 87 suites.",
- "generated_at_epoch": 1787625982.6561925
+ "last_commit": "41896a1 GAP CLOSURE C043: spectral normalization \u2014 power-iteration sigma estimate + Lipschitz cap. Found+fixed bug#16 (sigma^2 measurement). sn 3/3. Register: 102 closed, 88 suites.",
+ "generated_at_epoch": 1787626315.8228343
 }
