@@ -49,10 +49,11 @@
   <h2>Live numbers</h2>
   <div class="grid">
     <div class="stat"><b id="s-repos">—</b><span>Repos scanned</span></div>
-    <div class="stat"><b>100</b><span>waefrebeorn repos</span></div>
-    <div class="stat"><b>111</b><span>Bear files extracted</span></div>
-    <div class="stat"><b>64+</b><span>WuBuMath tests green</span></div>
+    <div class="stat"><b id="s-gaps">—</b><span>Gaps closed</span></div>
+    <div class="stat"><b id="s-suites">—</b><span>Test suites green</span></div>
+    <div class="stat"><b id="s-bugs">—</b><span>Bugs caught by gates</span></div>
   </div>
+  <p style="margin-top:10px;color:var(--dim);font-size:12px" id="s-commit"></p>
 </section>
 
 <section>
@@ -77,14 +78,20 @@
 
 <section>
   <h2>Campaign queue</h2>
-  <ul>
+  <ul id="queue">
     <li><span class="tag done">DONE</span> Extract src/bear → <b>BearRL</b> repo (PPO/GAE/MinGRU/Vulkan stack)</li>
     <li><span class="tag done">DONE</span> libbear.a builds standalone · unit gate 4/4 green</li>
     <li><span class="tag done">DONE</span> Manifest: idea mixture + testing-harness doctrine written</li>
     <li><span class="tag done">DONE</span> Orientation: BearRL=env ⟶ links ⟶ WuBuMath=math</li>
-    <li><span class="tag todo">NEXT</span> Beam-sweep canvas + dual-band visible/infrared format</li>
-    <li><span class="tag todo">NEXT</span> Quaternion flow-matching P-frames (probability-flow ODE)</li>
-    <li><span class="tag todo">NEXT</span> Manifold CLIP — geodesic InfoNCE on nested hyperbolic balls</li>
+    <li><span class="tag done">DONE</span> Beam-sweep canvas + dual-band visible/infrared format (A001/B007/B010)</li>
+    <li><span class="tag done">DONE</span> Quaternion flow-matching P-frames — probability-flow ODE (C002/C008)</li>
+    <li><span class="tag done">DONE</span> Manifold CLIP — geodesic InfoNCE + entailment cones + MERU recipe (D002-D005)</li>
+    <li><span class="tag done">DONE</span> Full hyperbolic transformer stack: MHA, LayerNorm, blocks, KV cache, RAdam (C031-C039)</li>
+    <li><span class="tag done">DONE</span> Codec bitstream layer: delta/zigzag/varint + exp-Golomb + RD mode decision (E007/E008/C029)</li>
+    <li><span class="tag done">DONE</span> Clustering suite: k-means/k-medoids/DPC/agglomerative + Dasgupta cost (C020/D016/D021/D025/D027)</li>
+    <li><span class="tag todo">NEXT</span> B-matrix register cells (wave queue)</li>
+    <li><span class="tag todo">NEXT</span> H-series RL invariants in propgate registry</li>
+    <li><span class="tag todo">NEXT</span> Register-sync pass: backfill GAP_REGISTER_1000.md closure log (95+ entries vs 29 on file)</li>
   </ul>
 </section>
 
@@ -113,6 +120,18 @@
 fetch('https://api.github.com/users/waefrebeorn').then(r=>r.json()).then(d=>{
   document.getElementById('s-repos').textContent=d.public_repos;
 }).catch(()=>document.getElementById('s-repos').textContent='100');
+
+// live status from gen_status.py (regenerated after every gap-closure push)
+async function loadStatus(){
+  try{
+    const s=await(await fetch('/status.json?t='+Date.now())).json();
+    document.getElementById('s-gaps').textContent=s.gaps_closed;
+    document.getElementById('s-suites').textContent=s.suites_wired;
+    document.getElementById('s-bugs').textContent=s.gate_bugs_caught;
+    if(s.last_commit)document.getElementById('s-commit').textContent='last commit: '+s.last_commit;
+  }catch(e){}
+}
+loadStatus();setInterval(loadStatus,30000);
 
 // phi-fractal beam sweep animation
 const c=document.getElementById('beam'),x=c.getContext('2d');
