@@ -1,11 +1,11 @@
 {
- "gaps_closed": 68,
+ "gaps_closed": 69,
  "closed_ids_sample": [
-  "D028",
   "D029",
   "D030",
   "D031",
   "D032",
+  "D033",
   "E006",
   "E007",
   "E008",
@@ -14,10 +14,10 @@
   "H015",
   "H016"
  ],
- "suites_wired": 102,
+ "suites_wired": 103,
  "suite_names_sample": [
-  "test_rp",
   "test_rsgd",
+  "test_sil",
   "test_slerp",
   "test_sn",
   "test_so3",
@@ -29,9 +29,9 @@
   "test_uv",
   "test_vhf_engine"
  ],
- "modules": 102,
+ "modules": 103,
  "module_names_sample": [
-  "wubu_rsgd.c",
+  "wubu_silhouette.c",
   "wubu_slerp_path.c",
   "wubu_so3.c",
   "wubu_specnorm.c",
@@ -46,6 +46,6 @@
  ],
  "gate_bugs_caught": 17,
  "bearrl_properties": 28,
- "last_commit": "e2e0bf5 GAP CLOSURE D032: hyperbolic UMAP \u2014 fuzzy k-NN weights + ball cross entropy. Structured 0.807 vs scrambled inf. um 3/3. Register: 107 closed, 93 suites.",
- "generated_at_epoch": 1787628219.2826436
+ "last_commit": "7f59d7f GAP CLOSURE D033: hyperbolic k-means++ \u2014 D^2 geodesic seeding, 20/20 both-blob coverage. kpp 3/3. Register: 108 closed, 94 suites.",
+ "generated_at_epoch": 1787628560.4566996
 }
