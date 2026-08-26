@@ -1,7 +1,9 @@
 {
-  "when": "2026-08-26T18:14:00Z",
-  "wubumath_head": "818aa4d",
+  "when": "2026-08-26T20:15:00Z",
+  "wubumath_head": "56d365d",
   "wubumath_make_test": "PASS",
   "bearrl_propgate": "ALL_HOLD",
-  "doctrine": "no divergent truths between repos at the same commit"
+  "doctrine": "no divergent truths between repos at the same commit",
+  "trellis": "C10 trellis RDOQ fixed - per-coefficient optimal level selection; 2/2 tests pass; 11185->1334 SSE at lambda=0.05",
+  "encoder_trellis": "C15 encoder uses trellis RDOQ for I-frame and P/B-frame paths"
 }
