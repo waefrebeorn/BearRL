@@ -1,6 +1,6 @@
 {
-  "when": "2026-08-26T21:50:00Z",
-  "wubumath_head": "aacf0ed",
+  "when": "2026-08-26T22:05:00Z",
+  "wubumath_head": "96afeb7",
   "wubumath_make_test": "PASS",
   "bearrl_propgate": "ALL_HOLD",
   "doctrine": "no divergent truths between repos at the same commit",
@@ -9,5 +9,6 @@
     "DCVC": "DCVC-RT (CVPR 2025): 1080p 100+ FPS, 21% bitrate saving vs H.266/VTM, first real-time NVC; DCVC-UF (arXiv 2026): 42.2% bitrate saving (large), 31.6% (small), 371.1 enc/273.6 dec FPS 1080p on RTX4090",
     "AV2": "~30% lower bitrate than AV1, ships end of 2026",
     "VVC": "VVC 25-29% better than AV1 at matched VMAF, 40%+ better than HEVC on UHD; broadcast deployment: Brazil TV3.0 DTV+ launched 27 Aug 2025, ATSC 3.0 A/345 July 2025, DVB-UHD, MediaTek Pentonic 700/800/1000 chips"
-  }
+  },
+  "ab_test_partial": "results.json + ab-chart.png exist in /home/wubu/ab-video-test/ \u2014 screencast content only (codec\u00d7resolution data for x264/x265/VP9/AV1 at 360p/720p/1080p/1440p). PSNR null (no reference comparison). Missing: animation/movie/anime/nature segment types."
 }
