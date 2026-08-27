@@ -1,5 +1,5 @@
 {
-  "when": "2026-08-26T22:05:00Z",
+  "when": "2026-08-26T22:15:00Z",
   "wubumath_head": "96afeb7",
   "wubumath_make_test": "PASS",
   "bearrl_propgate": "ALL_HOLD",
@@ -10,5 +10,9 @@
     "AV2": "~30% lower bitrate than AV1, ships end of 2026",
     "VVC": "VVC 25-29% better than AV1 at matched VMAF, 40%+ better than HEVC on UHD; broadcast deployment: Brazil TV3.0 DTV+ launched 27 Aug 2025, ATSC 3.0 A/345 July 2025, DVB-UHD, MediaTek Pentonic 700/800/1000 chips"
   },
-  "ab_test_partial": "results.json + ab-chart.png exist in /home/wubu/ab-video-test/ \u2014 screencast content only (codec\u00d7resolution data for x264/x265/VP9/AV1 at 360p/720p/1080p/1440p). PSNR null (no reference comparison). Missing: animation/movie/anime/nature segment types."
+  "ab_test_partial": "AB test script rewritten (457 lines) but timed out at 420s during clip generation. Needs: reduce TEST_DURATION from 5s, parallelize clip generation, or run in background. Existing results.json has screencast data only (codecs x264/x265/VP9/AV1 at 360p/720p/1080p/1440p). PSNR null — no reference comparison done. ab-chart.png exists (157KB, from prior run with limited data).",
+  "next_steps": [
+    "Run AB test in background with reduced duration (2s) and 4 resolutions x 8 codecs x 4 types = up to 128 encodes",
+    "Continue dominance loop: C9 in_progress (add 16x16/32x32 transform candidates to RDO loop), C10 in_progress (perceptual qmats), C15 in_progress (encoder, 5/5 green)"
+  ]
 }
