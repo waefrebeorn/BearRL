@@ -19,6 +19,18 @@
 #include <stdalign.h>
 #include <string.h>
 #include <stdlib.h>
+
+/* Windows portability: MinGW-w64 does not declare aligned_alloc even in C11 mode. */
+#if defined(_WIN32)
+#  include <malloc.h>
+#  define bear_aligned_alloc(align, size) _aligned_malloc((size), (align))
+#  define bear_aligned_free(ptr)          _aligned_free(ptr)
+#else
+#  define bear_aligned_alloc(align, size) aligned_alloc((align), (size))
+#  define bear_aligned_free(ptr)          free(ptr)
+#endif
+
+#include <stdlib.h>
 #include <stdio.h>
 
 /* ===================================================================
@@ -53,7 +65,7 @@ static inline void bear_arena_init(BearArena* a, void* backing, size_t cap) {
 
 /* Create arena with malloc (for host) */
 static inline int bear_arena_create(BearArena* a, size_t cap) {
-    void* mem = aligned_alloc(BEAR_ARENA_ALIGN, cap);
+    void* mem = bear_aligned_alloc(BEAR_ARENA_ALIGN, cap);
     if (!mem) return -1;
     bear_arena_init(a, mem, cap);
     return 0;
@@ -62,7 +74,7 @@ static inline int bear_arena_create(BearArena* a, size_t cap) {
 /* Destroy arena (free backing if malloc'd) */
 static inline void bear_arena_destroy(BearArena* a) {
     if (a->base) {
-        free(a->base);
+        bear_aligned_free(a->base);
         a->base = a->ptr = NULL;
         a->cap = a->used = 0;
     }
