@@ -5,6 +5,8 @@
 > environment AND the proof engine** for everything WuBuMath proves moving
 > forward.
 
+> **~WuBu~ AGI** — one system, many repositories. This is the **RL engine**. The Body is [WuBuOS](https://github.com/waefrebeorn/WuBuOS), the Brain wubuwizard, the Compiler WuBuNOS.
+
 ## Mission
 
 1. **RL environment** — C11 gym: envs (`bear_env*.c`), PPO trainer + GAE +
